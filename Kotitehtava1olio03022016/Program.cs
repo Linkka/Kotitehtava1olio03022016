@@ -23,11 +23,12 @@ namespace Kotitehtava1olio03022016
             times = int.Parse(Console.ReadLine());
             Console.WriteLine("Rolling " + times + " times...");
             // luodaan olio Dice-luokasta
+            Dice dice = new Dice();
             while (a < times)
             {
-                Dice dice = new Dice();
+
                 int number = dice.Throw();
-                System.Threading.Thread.Sleep(50);
+            //  System.Threading.Thread.Sleep(50);
                 list.Add(number);
                 a++;
                 if (number == 1)
